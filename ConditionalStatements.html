@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Conditional Example</title>
+
+    <script type="text/javascript">
+
+        function choices() {
+            var prefChoice = 1;
+            var stateChoice = 'IL';
+            var genderChoice = 'M';
+
+            if (prefChoice == 1) {
+                alert ("You picked number 1");
+                if(stateChoice == 'IL') {
+                    alert("You picked number 1 and you are from illinois");
+                    if(genderChoice == 'M'){
+                        alert("You picked number 1 and you are from Illinois and you are male");
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="choices()">
+<p>H1</p>
+
+<noscript>
+    <p>I'm Able to be displayed</p>
+</noscript>
+</body>
+</html>
